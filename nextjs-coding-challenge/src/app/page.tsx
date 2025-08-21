@@ -24,7 +24,7 @@ export default function Home() {
   };
 
   return (
-    <div className="p-10">
+    <div className="p-6 lg:p-10">
       {/* ======  Input  ======== */}
 
       <div className="max-w-7xl mx-auto space-y-8 mb-8">

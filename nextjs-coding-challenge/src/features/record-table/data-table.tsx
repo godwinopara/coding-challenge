@@ -83,7 +83,7 @@ export function DataTable<TData extends IRecords, TValue>({
       {/* ============== FILTERS SECTION ============= */}
       <CardHeader>
         {/* Header with title, record count, and export button */}
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col lg:flex-row justify-between items-center">
           <div>
             <CardTitle>Form Records</CardTitle>
             <CardDescription>
