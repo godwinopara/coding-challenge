@@ -21,7 +21,7 @@ Both projects already include detailed setup and usage instructions in their ind
 
 ---
 
-### 2. Records Dashboard (NextJs(React) + TypeScript)
+### 2. React Dynamic Form (NextJs(React) + TypeScript)
 - **Description**: A React 18 application for managing and filtering records with dynamic forms.  
 - **Features**:  
   - Add and view records  
