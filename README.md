@@ -32,7 +32,7 @@ Both projects already include detailed setup and usage instructions in their ind
 - **Tech Stack**: React 18, TypeScript, Tailwind CSS, Shadcn, Formik, Yup, TanStack Table, SheetJS  
 - **Location**: [`./react-dynamic-form`](./nextjs-coding-challenge)  
 
-➡️ [View Records Dashboard README](./nextjs-coding-challenge/README.md)
+➡️ [View React Dynamic Form README](./nextjs-coding-challenge/README.md)
 
 ---
 
