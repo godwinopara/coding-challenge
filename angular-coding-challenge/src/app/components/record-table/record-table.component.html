@@ -1,0 +1,95 @@
+<!-- Filters + Export Button -->
+<div class="flex flex-col lg:flex-row lg:justify-between gap-4 px-3 lg:px-0 mb-4">
+  <!-- Search -->
+  <mat-form-field class="w-full lg:w-[30%]">
+    <mat-label>Search</mat-label>
+    <input
+      matInput
+      placeholder="Search by name or phone"
+      class="w-full"
+      [formControl]="filterControl"
+    />
+  </mat-form-field>
+
+  <!-- Export Button -->
+  <div class="flex justify-start lg:justify-center">
+    <button
+      (click)="downloadExcel()"
+      class="flex items-center justify-center h-14 px-10 rounded-md bg-black text-white gap-2"
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          d="M12 3a1 1 0 0 1 1 1v8.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4A1 1 0 1 1 8.707 10.293L11 12.586V4a1 1 0 0 1 1-1z"
+        />
+        <path
+          d="M4 14h4.586l1.707 1.707a3 3 0 0 0 4.414 0L16 14h4v4a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-4z"
+        />
+      </svg>
+      Export Excel
+    </button>
+  </div>
+
+  <!-- Date Filters -->
+  <div class="flex flex-col sm:flex-row gap-2 w-full lg:w-[35%]">
+    <mat-form-field class="w-full">
+      <mat-label>Start Date</mat-label>
+      <input matInput type="date" [formControl]="startDateControl" />
+    </mat-form-field>
+    <mat-form-field class="w-full">
+      <mat-label>End Date</mat-label>
+      <input matInput type="date" [formControl]="endDateControl"/>
+    </mat-form-field>
+  </div>
+</div>
+
+<!-- Table Wrapper for horizontal scroll -->
+<div class="overflow-x-auto rounded-lg shadow-md">
+  <table mat-table [dataSource]="dataSource" class="min-w-full divide-y divide-gray-200">
+    <!-- Full Name Column -->
+    <ng-container matColumnDef="fullName">
+      <th mat-header-cell *matHeaderCellDef>Full Name</th>
+      <td mat-cell *matCellDef="let record">{{ record.fullName }}</td>
+    </ng-container>
+
+    <!-- Amount Column -->
+    <ng-container matColumnDef="amount">
+      <th mat-header-cell *matHeaderCellDef>Amount</th>
+      <td mat-cell *matCellDef="let record">{{ record.amount }}</td>
+    </ng-container>
+
+    <!-- Phone Number Column -->
+    <ng-container matColumnDef="phoneNumber">
+      <th mat-header-cell *matHeaderCellDef>Phone Number</th>
+      <td mat-cell *matCellDef="let record">{{ record.phoneNumber }}</td>
+    </ng-container>
+
+    <!-- Profile Picture Column -->
+    <ng-container matColumnDef="profilePicture">
+      <th mat-header-cell *matHeaderCellDef>Profile Picture</th>
+      <td mat-cell *matCellDef="let record">
+        <img
+          [src]="record.profilePicture"
+          alt=""
+          class="w-10 h-10 rounded-full object-cover border"
+        />
+      </td>
+    </ng-container>
+
+    <!-- Date Submitted Column -->
+    <ng-container matColumnDef="dateSubmitted">
+      <th mat-header-cell *matHeaderCellDef>Date Submitted</th>
+      <td mat-cell *matCellDef="let record">{{ record.dateSubmitted | date : "short" }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>
+
+<mat-paginator [pageSizeOptions]="[10,20,50]" showFirstLastButtons></mat-paginator>

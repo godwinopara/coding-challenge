@@ -1,0 +1,43 @@
+<div class="text-center px-3 py-8 max-w-6xl mx-auto">
+  <div class="py-4 max-w-2xl mx-auto">
+    <div class='mb-6'>
+      <h1 class="text-4xl font-bold mb-2">Dynamic Form Interface</h1>
+      <p class="text-gray-600">
+        Create records with multiple validated forms and view records
+      </p>
+    </div>
+
+    <!-- ================== Form Input ====================== -->
+    <div
+      class="border border-gray-300 rounded-md shadow-sm max-w-md lg:px-6 mx-auto text-left py-6"
+    >
+      <div class="mb-4">
+        <h3 class="font-medium text-base">Form Generator</h3>
+        <p class="text-gray-400">Enter the number of forms to generate</p>
+      </div>
+      <div class="flex flex-col w-full">
+        <label class="mb-2 text-left">Number of Forms </label>
+        <input
+          type="number"
+          class="block w-full text-center rounded-md border border-gray-300 bg-transparent px-3 py-3 text-sm placeholder:text-gray-400 focus:outline-none"
+          inputMode="numeric"
+          [formControl]="formLength"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- =============== Display Forms =============== -->
+  <div class="grid gap-6 mb-20 lg:grid-cols-3 max-w-7xl mx-auto">
+    @for(f of formsArray; track $index){
+    <app-form />
+    }
+  </div>
+
+  <!-- =============== Record Table ================= -->
+  <div
+    class="max-w-7xl overflow-x-auto lg:mx-auto border border-gray-300 rounded-md"
+  >
+    <app-record-table />
+  </div>
+</div>
