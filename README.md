@@ -30,7 +30,7 @@ Both projects already include detailed setup and usage instructions in their ind
   - Export records to **Excel (.xlsx)**  
   - Toast notifications & rich UI  
 - **Tech Stack**: React 18, TypeScript, Tailwind CSS, Shadcn, Formik, Yup, TanStack Table, SheetJS  
-- **Location**: [`./records-dashboard`](./nextjs-coding-challenge)  
+- **Location**: [`./react-dynamic-form`](./nextjs-coding-challenge)  
 
 ➡️ [View Records Dashboard README](./nextjs-coding-challenge/README.md)
 
