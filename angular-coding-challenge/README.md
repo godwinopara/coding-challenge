@@ -12,6 +12,11 @@ A React + TypeScript application for managing and filtering records. Features in
 - Export filtered records to **Excel (.xlsx)**  
 - Responsive table view  
 
+---
+## 🚀 Live Demo
+
+[Demo](./dynamic-form.mp4)
+
 ## 🖼️ Screenshots
 
 - **Homepage**  

@@ -1,4 +1,4 @@
-# Records Dashboard
+# React Dynamic Form
 
 A React + TypeScript application for managing and filtering records. Features include date filtering, profile picture upload, and exporting filtered records to **Excel (.xlsx)** using [SheetJS](https://github.com/SheetJS/sheetjs).
 
@@ -23,12 +23,6 @@ A React + TypeScript application for managing and filtering records. Features in
 
 - **Homepage**  
 ![Homepage](./public/homepage.png)
-
-- **Display Dynamic Form**  
-![Dynamic Form](./public/form-number.png)
-
-- **Export to Excel Sample Image**  
-![Exported Sample](./public/excel.png)
 
 ---
 
