@@ -15,9 +15,9 @@ Both projects already include detailed setup and usage instructions in their ind
   - Date range filtering  
   - Export records to **Excel (.xlsx)**  
 - **Tech Stack**: Angular 20, TypeScript, Tailwind CSS, Angular Material, SheetJS  
-- **Location**: [`./angular-dynamic-form`](./angular-dynamic-form)  
+- **Location**: [`./angular-dynamic-form`](./angular-coding-challenge)  
 
-➡️ [View Angular Dynamic Form README](./angular-dynamic-form/README.md)
+➡️ [View Angular Dynamic Form README](./angular-coding-challenge/README.md)
 
 ---
 
@@ -30,9 +30,9 @@ Both projects already include detailed setup and usage instructions in their ind
   - Export records to **Excel (.xlsx)**  
   - Toast notifications & rich UI  
 - **Tech Stack**: React 18, TypeScript, Tailwind CSS, Shadcn, Formik, Yup, TanStack Table, SheetJS  
-- **Location**: [`./records-dashboard`](./records-dashboard)  
+- **Location**: [`./records-dashboard`](./nextjs-coding-challenge)  
 
-➡️ [View Records Dashboard README](./records-dashboard/README.md)
+➡️ [View Records Dashboard README](./nextjs-coding-challenge/README.md)
 
 ---
 
