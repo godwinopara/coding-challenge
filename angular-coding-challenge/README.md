@@ -20,7 +20,7 @@ A React + TypeScript application for managing and filtering records. Features in
 ## 🖼️ Screenshots
 
 - **Homepage**  
-![Homepage](./public/Home.png)
+![Homepage](public/Home.png)
 
 ---
 
