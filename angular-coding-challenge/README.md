@@ -15,7 +15,7 @@ A React + TypeScript application for managing and filtering records. Features in
 ---
 ## 🚀 Live Demo
 
-[Demo](./dynamic-form.mp4)
+[Demo](https://streamable.com/mesmt6)
 
 ## 🖼️ Screenshots
 
